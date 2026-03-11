@@ -1,147 +1,224 @@
-# TP2 React – useState, événements, formulaires contrôlés et useEffect
+# 📘 TP2 React – Gestion de l’état et des événements
 
-## Objectif
 
-Ce TP a pour objectif de mettre en pratique les notions suivantes :
+## 📖 Description
 
-- gestion de l’état local avec `useState`
-- gestion des événements `onClick`, `onChange` et `onSubmit`
-- formulaires contrôlés
-- utilisation simple de `useEffect`
-- respect du flux unidirectionnel des données
+Ce TP a pour objectif de mettre en pratique les concepts fondamentaux de **React** liés à l’interactivité des applications :
 
----
-### Étape 1 : Préparer le projet React
+* Gestion de l’état local avec **useState**
+* Gestion des événements **onClick**, **onChange** et **onSubmit**
+* Création de **formulaires contrôlés**
+* Utilisation du hook **useEffect**
+* Compréhension du **flux unidirectionnel des données**
 
-Création du projet React et démarrage du serveur de développement.
-
-<img width="651" height="593" alt="etape1" src="https://github.com/user-attachments/assets/8bf17e42-58e1-4533-b0da-b22d272916da" />
-
-
-
-### Étape 2 : Composant Compteur avec useState
-
-Création du composant Compteur.js qui affiche un compteur simple et permet
-d’incrémenter sa valeur avec un bouton.
-
-Concepts utilisés
-
-useState
-
-onClick
-
-
-<img width="210" height="115" alt="rtape2" src="https://github.com/user-attachments/assets/a9e6d453-7675-4f5a-9aca-de9dbee19010" />
-
-
-### Étape 3 : Composant MessageBouton avec événement onClick
-
-Création du composant MessageBouton.js qui modifie le texte affiché après un clic sur un bouton.
-
-Concepts utilisés
-
-useState
-
-onClick
-
-<img width="313" height="187" alt="etape3" src="https://github.com/user-attachments/assets/069d56d7-b501-4352-9752-ace846e5663e" />
-
-
-
-### Étape 4 : Formulaire contrôlé
-
-Création du composant FormulaireNom.js avec un champ texte contrôlé par React, et affichage d’une alerte lors de la soumission.
-
-Concepts utilisés
-
-useState
-
-onChange
-
-onSubmit
-
-formulaire contrôlé
-
-
-
-<img width="552" height="339" alt="etape4" src="https://github.com/user-attachments/assets/f2372627-af49-4ee4-ba0a-6048619834eb" />
-
-
-### Étape 5 : Compteur avec useEffect
-
-Création du composant CompteurEffet.js qui utilise useEffect pour afficher la valeur du compteur dans la console à chaque mise à jour.
-
-Concepts utilisés
-
-useState
-
-useEffect
-
-
-
-<img width="603" height="440" alt="etape5" src="https://github.com/user-attachments/assets/fc53cde8-25ee-41b0-ae99-4e9ae378600a" />
-
-
-
-### Étape 6 : Exercices pratiques
----
-Exercice 1 : Affichage dynamique
-
-Création d’un composant AffichageDynamique.js qui change le texte affiché à chaque clic.
----
-Exercice 2 : Formulaire d’inscription
-
-Création d’un composant FormulaireInscription.js avec deux champs :
-
-prénom
-
-email
-
-Les valeurs sont affichées dans une alerte lors de la soumission.
----
-Exercice 3 : Compteur avec effet personnalisé
-
-Création d’un composant CompteurTitre.js qui :
-
-affiche le nombre de clics
-
-modifie le titre de l’onglet du navigateur avec document.title
-
-<img width="759" height="588" alt="etape6" src="https://github.com/user-attachments/assets/71e2bffb-0495-4dc9-9365-744de3feaf13" />
-
-
-
-
-Résultat final
-
-L’application finale contient les composants suivants :
-
-Compteur
-
-MessageBouton
-
-FormulaireNom
-
-CompteurEffet
-
-AffichageDynamique
-
-FormulaireInscription
-
-CompteurTitre
+L’application finale contient plusieurs composants interactifs permettant d’illustrer ces notions.
 
 ---
 
-Technologies utilisées
+# ⚙️ Installation du projet
 
-React.js
+## 1️⃣ Création du projet
 
-JavaScript
+```bash
+npx create-react-app tp-state
+```
 
-HTML
+## 2️⃣ Accéder au dossier du projet
 
-CSS
+```bash
+cd tp-state
+```
 
-Node.js
+## 3️⃣ Lancer le serveur de développement
 
-Create React App
+```bash
+npm start
+```
+
+L’application sera accessible à l’adresse :
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📁 Structure du projet
+
+```
+src/
+│
+├── App.js
+├── Compteur.js
+├── MessageBouton.js
+├── FormulaireNom.js
+├── CompteurEffet.js
+├── AffichageDynamique.js
+├── FormulaireInscription.js
+├── CompteurTitre.js
+└── index.js
+```
+
+---
+
+# 🧩 Étapes du TP
+
+## 🟢 Étape 1 : Préparation du projet
+
+Création du projet React avec **Create React App** et démarrage du serveur de développement.
+
+📷 Capture d’écran :
+
+<img width="651" height="593" alt="etape1" src="https://github.com/user-attachments/assets/67274a98-3cec-4d77-8610-d34ecb74eb85" />
+
+---
+
+## 🟢 Étape 2 : Composant `Compteur`
+
+Création d’un compteur simple utilisant **useState** pour gérer un état local.
+
+Fonctionnalité :
+
+* affichage du nombre de clics
+* bouton permettant d’incrémenter le compteur
+
+Concepts utilisés :
+
+* `useState`
+* `onClick`
+
+📷 Capture d’écran :
+
+
+<img width="210" height="115" alt="rtape2" src="https://github.com/user-attachments/assets/a2ba510b-6d2e-4796-8251-2897fceee152" />
+
+
+---
+
+## 🟢 Étape 3 : Composant `MessageBouton`
+
+Création d’un bouton qui modifie dynamiquement le texte affiché.
+
+Concepts utilisés :
+
+* `useState`
+* gestion des événements avec `onClick`
+
+📷 Capture d’écran :
+
+<img width="313" height="187" alt="etape3" src="https://github.com/user-attachments/assets/b98159f4-65a4-4f23-a018-ffd8bb00ed41" />
+
+
+---
+
+## 🟢 Étape 4 : Formulaire contrôlé
+
+Création d’un formulaire avec un champ **Nom** contrôlé par React.
+
+Fonctionnalité :
+
+* récupération de la valeur saisie
+* affichage dans une alerte lors de la soumission
+
+Concepts utilisés :
+
+* `useState`
+* `onChange`
+* `onSubmit`
+* formulaires contrôlés
+
+📷 Capture d’écran :
+
+<img width="552" height="339" alt="etape4" src="https://github.com/user-attachments/assets/b1fcef55-4d61-4e7a-898f-8321b38e66b8" />
+
+
+---
+
+## 🟢 Étape 5 : Compteur avec `useEffect`
+
+Création d’un compteur qui utilise **useEffect** pour afficher la valeur du compteur dans la console du navigateur à chaque modification.
+
+Concepts utilisés :
+
+* `useState`
+* `useEffect`
+* tableau de dépendances
+
+📷 Capture d’écran :
+
+
+<img width="603" height="440" alt="etape5" src="https://github.com/user-attachments/assets/e060d8ec-f8b2-4a9b-9c17-c74da49f933c" />
+
+---
+
+## 🟢 Étape 6 : Exercices pratiques
+
+### Exercice 1 : Affichage dynamique
+
+Création d’un composant qui modifie le texte affiché à chaque clic.
+
+Exemple :
+
+```
+Premier clic
+Deuxième clic
+Troisième clic
+```
+
+---
+
+### Exercice 2 : Formulaire d’inscription
+
+Création d’un formulaire contrôlé contenant :
+
+* un champ **Prénom**
+* un champ **Email**
+
+Les informations saisies sont affichées dans une **alerte** lors de la soumission.
+
+---
+
+### Exercice 3 : Compteur avec effet personnalisé
+
+Création d’un compteur qui :
+
+* affiche le nombre de clics
+* met à jour le **titre de l’onglet du navigateur** avec `document.title`
+
+📷 Capture d’écran :
+
+<img width="759" height="588" alt="etape6" src="https://github.com/user-attachments/assets/eafb257a-04f8-412c-be4a-e9c082ee3d3a" />
+
+
+---
+
+# 🖥️ Résultat final
+
+L’application finale contient plusieurs composants interactifs :
+
+* Compteur simple
+* Message dynamique
+* Formulaire contrôlé
+* Compteur avec effet
+* Affichage dynamique
+* Formulaire d’inscription
+* Compteur modifiant le titre du navigateur
+
+
+---
+
+# 🛠️ Technologies utilisées
+
+* ⚛️ React.js
+* 🟨 JavaScript (ES6)
+* 🌐 HTML / CSS
+* 🟢 Node.js
+* 📦 Create React App
+
+---
+
+# 👨‍💻 Auteur
+
+TP réalisé dans le cadre d’un **travail pratique React**.
+
+Étudiant : **BAJADDA ASMA**
